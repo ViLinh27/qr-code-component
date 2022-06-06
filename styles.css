@@ -15,7 +15,7 @@ body {
 .card {
   background-color: hsl(0, 0%, 100%);
   width: 27rem;
-  height: 45rem;
+  height: 39rem;
   padding: 1.5rem 0.5rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -36,23 +36,46 @@ body {
   border-radius: 1.5rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-
-.card-image-content {
-}
-
 .card-text {
   text-align: center;
   margin: 1.2rem 2rem;
 }
 #card-header {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   color: hsl(218, 44%, 22%);
-  margin: 1rem;
 }
 #card-paragraph {
   color: hsl(211, 7%, 67%);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .attribution {
   text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    width: 20rem;
+    height: 28rem;
+    padding: 1.5rem 0.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card-image,
+  .qrcode {
+    background-color: hsl(211, 92%, 54%);
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1.5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  #card-header {
+    font-size: 1.3rem;
+  }
+  #card-paragraph {
+    font-size: 0.9rem;
+  }
 }
